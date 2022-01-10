@@ -2,31 +2,74 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "AvernirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "AvernirNext", Avenir, "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
     font-weight: normal;
     font-size: 12px;
 }
 
-html, body {
+html,
+body {
     height: 100%;
+}
+
+body {
+    background-color: #eceef1;
 }
 
 a {
     text-decoration: none;
-    color: #0077C5;
+    color: #0077c5;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* Top bar style */
+button {
+    cursor: pointer;
+}
+
+fieldset {
+    border: none;
+}
+
+label,
+input {
+    display: inline-block;
+    text-align: start;
+}
+
+label {
+    width: 320px;
+    padding: 0 0 12px;
+}
+input {
+    width: 320px;
+    height: 34px;
+    min-width: 160px;
+    padding: 0 6px 0 8px;
+    border: 1px solid #c1c5c8;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline-color: #59a6da;
+    box-shadow: 1px 1px 15px #59a6da;
+}
+
+strong {
+    display: block;
+}
+
+/* Top bar section */
 .top-bar {
     height: 60px;
     padding: 10px 30px;
-    background-color: #ECEEF1;
+    background-color: #eceef1;
     display: flex;
     justify-content: flex-end;
+    font-size: 12px;
 }
 
 .top-bar-left:first-child {
@@ -45,23 +88,236 @@ a:hover {
     width: 109.47px;
     height: 34px;
     padding: 0 20px;
-    background-color: #0077C5;
+    background-color: #0077c5;
     border-radius: 4px;
     border: 1px solid #4c4c4c;
     color: white;
 }
 
-#sign-in:last-child span{
+#sign-in:last-child span,
+#submit-btn:last-child span {
     width: 46px;
     height: 17px;
     margin-bottom: 50px;
     vertical-align: middle;
 }
 .filter-white {
-    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(123deg) brightness(105%) contrast(101%);
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(123deg)
+        brightness(105%) contrast(101%);
 }
 
 .lock-outline {
     width: 16px;
     height: 20px;
+}
+
+/* product links and logos section */
+.intuit {
+    height: 75px;
+    padding: 20px 0;
+}
+
+#intuit-signup-page {
+    width: 118px;
+    height: 35px;
+    margin: 0 auto;
+    display: block;
+    background-image: url(images/ecosystem_logos_new@2x-2c783a06..png);
+    background-size: 562px 83px;
+}
+
+.product-links {
+    height: 42px;
+    padding: 0 0 4px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-list {
+    margin: 0 auto;
+}
+
+.product-list li {
+    width: 64px;
+    height: 14px;
+    margin-right: 5px;
+    display: inline;
+}
+
+.mint-img,
+.turbotax-img,
+.quickbooks-img {
+    width: 23px;
+    height: 23px;
+}
+
+#mint-link,
+#quickbooks-link,
+#turbotax-link {
+    margin-left: 2px;
+}
+
+#mint-link {
+    background-image: url(images/mint-logo-text.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 37px;
+    height: 20px;
+}
+
+#quickbooks-link {
+    background-image: url(images/quickbooks-logo-text.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 98px;
+    height: 22px;
+}
+
+#turbotax-link {
+    background-image: url(images/turbotax-logo-text.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 74px;
+    height: 22px;
+}
+
+/* sign up container section */
+.form-container {
+    width: 380px;
+    height: 650.98px;
+    margin: 0 auto;
+    border: 1px solid #c7c7c7;
+    border-bottom: none;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.form-container header {
+    padding-bottom: 20px;
+}
+.form-container header span {
+    display: block;
+}
+
+.form-container span:first-child {
+    font-size: 24px;
+    color: #393a3d;
+}
+
+.learn-more,
+.learn-more a,
+.sign-in,
+.sign-in a,
+.recommended {
+    font-size: 14px;
+}
+
+.learn-more,
+.sign-in {
+    color: #7a7a7a;
+    font-weight: 300;
+}
+
+.learn-more {
+    padding: 20px 0 0;
+}
+
+.email {
+    height: 90px;
+}
+
+.telephone {
+    min-height: 115px;
+}
+
+.password {
+    height: 93px;
+}
+
+.password-container {
+    position: relative;
+}
+
+#left-unlock {
+    position: absolute;
+    background: url(images/lock-left-grey@3x-b7dc45c6..png) no-repeat 0% 50% /
+        21px 21px;
+    width: 33px;
+    height: 34px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+}
+
+#submit-btn {
+    width: 100%;
+    height: 44px;
+    padding: 6px 12px;
+    outline: none;
+    vertical-align: center;
+    background-color: #0077c5;
+    border: none;
+    border-radius: 5px;
+    border-color: #0077c5;
+    color: white;
+}
+
+#submit-btn span {
+    font-size: 15.75px;
+}
+
+.sms-warning {
+    width: 320px;
+    display: block;
+    text-align: start;
+    font-size: 10px;
+    color: #444444;
+}
+
+.form-terms {
+    width: 318px;
+    height: 50px;
+    padding: 10px 0 0;
+    margin-top: 20px;
+}
+
+.form-terms .terms-of-use-text span,
+.form-terms .terms-of-use-text strong {
+    font-size: 12px;
+    font-style: italic;
+    color: #757575;
+    line-height: 1.5;
+}
+
+.form-terms .terms-of-use-text strong {
+    font-weight: bold;
+}
+
+.terms-of-use {
+    width: 307.97px;
+    height: 50px;
+}
+
+.captcha-container {
+    width: 380px;
+    height: 53px;
+    background-color: #eceef1;
+    margin: 0 auto;
+    text-align: center;
+    padding: 16px;
+    border: 1px solid #c7c7c7;
+    border-top: none;
+}
+
+.captcha-container span,
+.captcha-container a {
+    font-size: 10px;
+    border-top: none;
+}
+
+.captcha-container span {
+    color: #8d9096;
 }
