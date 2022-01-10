@@ -34,6 +34,9 @@ fieldset {
     border: none;
 }
 
+li {
+    list-style-type: none;
+}
 label,
 input {
     display: inline-block;
@@ -43,6 +46,7 @@ input {
 label {
     width: 320px;
     padding: 0 0 12px;
+    color: #404040;
 }
 input {
     width: 320px;
@@ -320,4 +324,50 @@ strong {
 
 .captcha-container span {
     color: #8d9096;
+}
+
+/* bottom footer section */
+.bottom-footer {
+    padding: 20px 0;
+}
+
+.bottom-footer span {
+    width: 714.45px;
+    height: 32px;
+}
+.bottom-footer-links ul {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 5px;
+}
+
+.bottom-footer-links li {
+    padding: 0 0 0 10px;
+}
+
+#legal-info,
+#privacy-info,
+#security-info,
+.copyright {
+    color: #505050;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.privacy-settings {
+    height: 61px;
+    margin: 72px 0 0;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+}
+
+.privacy-settings a {
+    font-size: 14px;
 }
