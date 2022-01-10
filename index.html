@@ -2,27 +2,177 @@
 
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>HTML Forms</title>
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/style.css" />
     </head>
     <body>
         <header>
             <div class="top-bar">
                 <div class="top-bar-left">
                     <span>Already have an Intuit account?</span>
-                    <a id="account-recovery" href="#">I forgot my User ID or Password</a>
+                    <a id="account-recovery" href="#"
+                        >I forgot my User ID or Password</a
+                    >
                 </div>
                 <div class="top-bar-right">
                     <button type="button" id="sign-in">
                         <span>
-                            <img src="images/lock-outline.svg" class="filter-white">
+                            <img
+                                src="images/lock-outline.svg"
+                                class="filter-white"
+                            />
                         </span>
                         <span>Sign In</span>
                     </button>
                 </div>
             </div>
         </header>
+        <section class="intuit">
+            <a
+                id="intuit-signup-page"
+                href="https://accounts.intuit.com/signup.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Futm_medium%3Ddirect%26cta%3Dhero_sign_up_free_ProspectWeb%26ivid%3Dff7dea5d-adcb-4f2a-b10e-ee118291264e%26adobe_mc%3DMCMID%253D73858714158080255052773804408215191989%257CMCORGID%253D969430F0543F253D0A4C98C6%252540AdobeOrg%257CTS%253D1607715239%26ivid%3Dff7dea5d-adcb-4f2a-b10e-ee118291264e%26ivid%3D6c3e4195-7af8-4635-85ce-0ab4b1d69136#"
+            >
+            </a>
+        </section>
+        <section class="product-links">
+            <ul class="product-list">
+                <li>
+                    <img class="mint-img" src="images/mint.svg" />
+                    <a
+                        href="https://mint.intuit.com/"
+                        target="_blank"
+                        id="mint-link"
+                    ></a>
+                </li>
+                <li>
+                    <img class="quickbooks-img" src="images/quickbooks.svg" />
+                    <a
+                        href="https://quickbooks.intuit.com/"
+                        target="_blank"
+                        id="quickbooks-link"
+                    ></a>
+                </li>
+                <li>
+                    <img class="turbotax-img" src="images/turbotax.svg" />
+                    <a
+                        href="https://turbotax.intuit.com/"
+                        target="_blank"
+                        id="turbotax-link"
+                    ></a>
+                </li>
+            </ul>
+        </section>
+        <section class="sign-up-container">
+            <div class="form-container">
+                <header>
+                    <span>Create an Intuit account</span>
+                    <span class="learn-more">
+                        One account for everything Intuit, including
+                        <br />
+                        Mint,
+                        <a
+                            href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account"
+                            target="_blank"
+                        >
+                            Learn more
+                        </a>
+                    </span>
+                    <span class="sign-in">
+                        Already have an account?
+                        <a>Sign In</a>
+                    </span>
+                </header>
+                <section class="form">
+                    <form>
+                        <fieldset class="email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required />
+                        </fieldset>
+                        <fieldset class="telephone">
+                            <label for="telephone">Phone (recomended)</label>
+                            <input type="tel" id="telephone" />
+                            <span class="sms-warning">
+                                Standard call, message, or data rates may apply.
+                            </span>
+                        </fieldset>
+                        <fieldset class="password">
+                            <label for="password">Password</label>
+                            <div class="password-container">
+                                <input type="password" id="password" required />
+                                <span id="left-unlock"></span>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <button type="submit" id="submit-btn">
+                                <span>
+                                    <img
+                                        src="images/lock-outline.svg"
+                                        class="filter-white"
+                                    />
+                                </span>
+                                <span>Create Account</span>
+                            </button>
+                        </fieldset>
+                        <footer class="form-terms">
+                            <div class="terms-of-use-text">
+                                <span>
+                                    By selecting Create account, you agree to
+                                    our
+                                    <a
+                                        href="https://mint.intuit.com/terms"
+                                        id="terms"
+                                        target="_blank"
+                                        >Terms</a
+                                    >
+                                    and
+                                </span>
+                                <span>
+                                    have read and acknowledge our
+                                    <a
+                                        href="https://www.intuit.com/privacy/statement/"
+                                        id="privacy-statement"
+                                        target="_blank"
+                                    >
+                                        Global Privacy
+                                        <br />
+                                        Statement.
+                                    </a>
+                                </span>
+                                <br />
+                                <strong
+                                    >Update effective on January 10,
+                                    2022</strong
+                                >
+                            </div>
+                        </footer>
+                    </form>
+                </section>
+            </div>
+        </section>
+        <section>
+            <div class="captcha-container">
+                <span>
+                    Invisible reCAPTCHA by Google
+                    <a
+                        href="https://www.google.com/intl/en/policies/privacy/"
+                        id="captacha-privacy-policy"
+                        target="_blank"
+                    >
+                        Privacy Policy
+                    </a>
+                    and
+                    <a
+                        href="https://www.google.com/intl/en/policies/terms/"
+                        id="captcha-terms"
+                        target="_blank"
+                    >
+                        Terms of Use
+                    </a>
+                    .
+                </span>
+            </div>
+        </section>
     </body>
 </html>
